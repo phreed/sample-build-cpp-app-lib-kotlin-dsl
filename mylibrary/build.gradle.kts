@@ -6,5 +6,6 @@ plugins {
 
 library {
     targetMachines.set(listOf(machines.linux.x86_64, machines.windows.x86_64))
-    linkage.set(listOf(Linkage.STATIC, Linkage.SHARED))
+    linkage.add(Linkage.STATIC)
+    linkage.add(Linkage.SHARED)
 }
